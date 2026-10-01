@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ayajonimga — Ustoz va Ona ❤️</title>
+
+    <meta
+        name="description"
+        content="Eng aziz insonim — ayajonimga, Ustoz va murabbiylar kuni uchun maxsus tayyorlangan tabrik."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- =========================================
+     PRELOADER
+========================================= -->
+
+<div class="preloader" id="preloader">
+    <div class="loader-content">
+        <div class="loader-flower">✿</div>
+        <p>Bir kichik hikoya tayyorlanmoqda...</p>
+        <div class="loader-line">
+            <span></span>
+        </div>
+    </div>
+</div>
+
+
+<!-- =========================================
+     START SCREEN
+========================================= -->
+
+<div class="start-screen" id="startScreen">
+
+    <div class="start-glow"></div>
+
+    <div class="start-content">
+
+        <div class="small-label">
+            1 OKTABR · 2026
+        </div>
+
+        <h1>
+            Eng aziz<br>
+            <span>ustozimga...</span>
+        </h1>
+
+        <p>
+            Bu oddiy tabrik emas.
+            Bu — sizga aytilmagan bir nechta
+            kichik rahmatlarim.
+        </p>
+
+        <button class="primary-button" id="startButton">
+            <span>Hikoyani boshlash</span>
+            <span class="button-heart">♡</span>
+        </button>
+
+        <div class="start-note">
+            🎵 Musiqa uchun ovozingizni yoqing
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     AUDIO
+========================================= -->
+
+<audio id="backgroundMusic" loop preload="metadata">
+    <source src="music/background.mp3" type="audio/mpeg">
+</audio>
+
+<button
+    class="music-control"
+    id="musicControl"
+    aria-label="Musiqani yoqish yoki o‘chirish"
+>
+    <span id="musicIcon">♫</span>
+</button>
+
+
+<!-- =========================================
+     FLOATING DECORATIONS
+========================================= -->
+
+<div class="floating-layer" aria-hidden="true">
+    <span>✦</span>
+    <span>✧</span>
+    <span>♡</span>
+    <span>✦</span>
+    <span>·</span>
+    <span>✧</span>
+</div>
+
+
+<main id="mainContent" class="site-hidden">
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="hero section-dark" id="hero">
+
+        <div class="hero-background"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-date reveal">
+                01 · 10 · 2026
+            </div>
+
+            <div class="hero-line"></div>
+
+            <p class="hero-overline reveal">
+                USTOZ VA MURABBIYLAR KUNI
+            </p>
+
+            <h1 class="hero-title reveal">
+                Ayajonim,<br>
+                <span>bayramingiz muborak!</span>
+            </h1>
+
+            <p class="hero-subtitle reveal">
+                Siz mening hayotimdagi eng mehribon ona
+                va eng birinchi ustozimsiz.
+            </p>
+
+            <div class="scroll-hint">
+                <span>Hikoyani davom ettiring</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MOTHER + TEACHER
+    ====================================== -->
+
+    <section class="mother-section section-light" id="mother">
+
+        <div class="section-container">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+                    MEN UCHUN
+                </span>
+
+                <h2>
+                    Siz faqat<br>
+                    <em>o‘qituvchi</em> emassiz.
+                </h2>
+
+            </div>
+
+
+            <div class="mother-grid">
+
+                <div class="portrait-card reveal">
+
+                    <div class="portrait-frame">
+
+                        <img
+                            src="image/ayajon.jpg"
+                            alt="Ayajonim"
+                            class="mother-photo"
+                        >
+
+                        <div class="portrait-decoration">
+                            <span>♡</span>
+                        </div>
+
+                    </div>
+
+                    <div class="portrait-caption">
+                        <span>Eng aziz insonim</span>
+                        <strong>AYAJONIM</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="mother-text">
+
+                    <p class="big-quote reveal">
+                        “O‘quvchilar uchun ustoz,
+                        men uchun esa — AYAM.”
+                    </p>
+
+                    <div class="text-divider"></div>
+
+                    <p class="body-text reveal">
+                        Har kuni boshqa bolalarga harf,
+                        so‘z va bilim o‘rgatadigan insonning
+                        farzandi bo‘lish — men uchun alohida
+                        baxt.
+                    </p>
+
+                    <p class="body-text reveal">
+                        Chunki men sizdan faqat kitobdagi
+                        bilimlarni emas, mehrni, sabrni,
+                        yaxshilikni va inson bo‘lishni
+                        o‘rganganman.
+                    </p>
+
+                    <div class="signature reveal">
+                        <span>Mehr bilan,</span>
+                        <strong>farzandingiz ❤️</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         TEACHER STORY
+    ====================================== -->
+
+    <section class="teacher-section section-warm" id="teacher">
+
+        <div class="section-container">
+
+            <div class="section-heading centered reveal">
+
+                <span class="eyebrow">
+                    USTOZLIK
+                </span>
+
+                <h2>
+                    Bir ustozning qo‘lida<br>
+                    <em>minglab kichik orzular</em>
+                </h2>
+
+                <p>
+                    Boshlang‘ich sinf o‘qituvchisi bo‘lish —
+                    faqat dars berish emas.
+                </p>
+
+            </div>
+
+
+            <div class="teacher-cards">
+
+                <article class="teacher-card reveal">
+
+                    <div class="teacher-icon">✎</div>
+
+                    <span>01</span>
+
+                    <h3>
+                        Birinchi harf
+                    </h3>
+
+                    <p>
+                        Kichkina qo‘llarga ilk harflarni
+                        yozishni o‘rgatish.
+                    </p>
+
+                </article>
+
+
+                <article class="teacher-card reveal">
+
+                    <div class="teacher-icon">♡</div>
+
+                    <span>02</span>
+
+                    <h3>
+                        Birinchi ishonch
+                    </h3>
+
+                    <p>
+                        “Men buni qila olaman” degan
+                        ishonchni uyg‘otish.
+                    </p>
+
+                </article>
+
+
+                <article class="teacher-card reveal">
+
+                    <div class="teacher-icon">✦</div>
+
+                    <span>03</span>
+
+                    <h3>
+                        Birinchi orzu
+                    </h3>
+
+                    <p>
+                        Har bir bolaning kelajagiga
+                        kichik bir nur qo‘shish.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="teacher-quote reveal">
+
+                <div class="quote-mark">“</div>
+
+                <p>
+                    Ba'zi insonlar dars beradi.
+                    Ba'zi insonlar esa dars bilan birga
+                    <strong>hayotga mehr berishni</strong> ham o‘rgatadi.
+                </p>
+
+                <div class="quote-author">
+                    — Siz haqingizda
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MEMORY GALLERY
+    ====================================== -->
+
+    <section class="memory-section section-dark" id="memories">
+
+        <div class="section-container">
+
+            <div class="section-heading centered light reveal">
+
+                <span class="eyebrow">
+                    XOTIRALAR
+                </span>
+
+                <h2>
+                    Suratlarda qolgan<br>
+                    <em>go‘zal lahzalar</em>
+                </h2>
+
+                <p>
+                    Har bir surat — alohida bir xotira.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <button
+                    class="gallery-item gallery-large reveal"
+                    data-image="image/memory-01.jpg"
+                    data-title="Go‘zal xotira"
+                >
+                    <img
+                        src="image/memory-01.jpg"
+                        alt="Xotira"
+                    >
+                    <span class="gallery-overlay">
+                        Ko‘rish ↗
+                    </span>
+                </button>
+
+
+                <button
+                    class="gallery-item reveal"
+                    data-image="image/memory-02.jpg"
+                    data-title="Mehr bilan"
+                >
+                    <img
+                        src="image/memory-02.jpg"
+                        alt="Xotira"
+                    >
+                    <span class="gallery-overlay">
+                        Ko‘rish ↗
+                    </span>
+                </button>
+
+
+                <button
+                    class="gallery-item reveal"
+                    data-image="image/memory-03.jpg"
+                    data-title="Baxtli lahza"
+                >
+                    <img
+                        src="image/memory-03.jpg"
+                        alt="Xotira"
+                    >
+                    <span class="gallery-overlay">
+                        Ko‘rish ↗
+                    </span>
+                </button>
+
+
+                <button
+                    class="gallery-item reveal"
+                    data-image="image/classroom.jpg"
+                    data-title="Ustozlik hayoti"
+                >
+                    <img
+                        src="image/classroom.jpg"
+                        alt="Sinf xonasi"
+                    >
+                    <span class="gallery-overlay">
+                        Ko‘rish ↗
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         RANDOM WISHES
+    ====================================== -->
+
+    <section class="wishes-section section-light" id="wishes">
+
+        <div class="section-container">
+
+            <div class="section-heading centered reveal">
+
+                <span class="eyebrow">
+                    SIZ UCHUN
+                </span>
+
+                <h2>
+                    Bir emas,<br>
+                    <em>ko‘plab tilaklar</em>
+                </h2>
+
+                <p>
+                    Har bir tugmada siz uchun boshqa
+                    bir kichik tilak yashiringan.
+                </p>
+
+            </div>
+
+
+            <div class="wish-box reveal">
+
+                <div class="wish-sparkles">
+                    ✦ · ✧ · ✦
+                </div>
+
+                <div class="wish-number" id="wishNumber">
+                    01
+                </div>
+
+                <p class="wish-text" id="wishText">
+                    Ayajon, qalbingizdagi mehr
+                    hech qachon kamaymasin.
+                </p>
+
+                <button
+                    class="wish-button"
+                    id="wishButton"
+                >
+                    <span>Yana bir tilak</span>
+                    <span>✦</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         LETTER
+    ====================================== -->
+
+    <section class="letter-section section-warm" id="letter">
+
+        <div class="section-container">
+
+            <div class="section-heading centered reveal">
+
+                <span class="eyebrow">
+                    YURAKDAN
+                </span>
+
+                <h2>
+                    Ayajonimga<br>
+                    <em>bir necha so‘z</em>
+                </h2>
+
+            </div>
+
+
+            <div class="letter-wrapper reveal">
+
+                <div class="envelope" id="envelope">
+
+                    <div class="envelope-back"></div>
+
+                    <div class="envelope-letter">
+
+                        <div class="letter-content">
+
+                            <div class="letter-date">
+                                1-oktabr, 2026
+                            </div>
+
+                            <h3>
+                                Aziz ayajonim...
+                            </h3>
+
+                            <p>
+                                Sizni bugungi bayram bilan
+                                chin qalbimdan tabriklayman.
+                            </p>
+
+                            <p>
+                                Siz men uchun nafaqat mehribon
+                                ona, balki hayotdagi eng birinchi
+                                ustozimsiz.
+                            </p>
+
+                            <p>
+                                Sizga bergan barcha mehringiz,
+                                sabringiz va tarbiyangiz uchun
+                                rahmat.
+                            </p>
+
+                            <p>
+                                Doimo sog‘-salomat bo‘ling.
+                                Ko‘nglingiz xotirjam, yuzingiz
+                                kulib tursin.
+                            </p>
+
+                            <div class="letter-final">
+                                Sizni juda yaxshi ko‘raman. ❤️
+                            </div>
+
+                            <div class="letter-signature">
+                                Farzandingizdan
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="envelope-front"></div>
+
+                </div>
+
+
+                <button
+                    class="primary-button letter-button"
+                    id="openLetter"
+                >
+                    <span>Xatni ochish</span>
+                    <span>♡</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FINAL
+    ====================================== -->
+
+    <section class="final-section section-dark" id="final">
+
+        <div class="final-glow"></div>
+
+        <div class="final-content">
+
+            <div class="final-small reveal">
+                BU SAYT TUGAYDI...
+            </div>
+
+            <h2 class="final-title reveal">
+                for my first <br>
+                <em>teacher.</em>
+            </h2>
+
+            <div class="final-photo reveal">
+
+                <img
+                    src="image/ayajon.jpg"
+                    alt="Ayajonim"
+                >
+
+                <div class="final-photo-ring"></div>
+
+            </div>
+
+            <p class="final-message reveal">
+                Ayajonim, Ustoz va murabbiylar kuni
+                muborak bo‘lsin!
+            </p>
+
+            <div class="final-heart reveal">
+                ♥
+            </div>
+
+            <p class="final-year">
+                01 · 10 · 2026
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================
+     IMAGE MODAL
+========================================= -->
+
+<div class="image-modal" id="imageModal">
+
+    <button
+        class="modal-close"
+        id="modalClose"
+        aria-label="Yopish"
+    >
+        ×
+    </button>
+
+    <div class="modal-content">
+
+        <img
+            id="modalImage"
+            src=""
+            alt=""
+        >
+
+        <p id="modalTitle"></p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     SCRIPTS
+========================================= -->
+
+<script src="js/app.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/music.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/interactions.js"></script>
+
+</body>
+</html>

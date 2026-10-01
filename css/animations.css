@@ -1,0 +1,190 @@
+/* =========================================
+   REVEAL
+========================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(35px);
+
+    transition:
+        opacity 1s cubic-bezier(.22,1,.36,1),
+        transform 1s cubic-bezier(.22,1,.36,1);
+}
+
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero-title {
+    animation:
+        heroTitle 1.5s cubic-bezier(.22,1,.36,1)
+        .5s both;
+}
+
+
+@keyframes heroTitle {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(40px)
+            scale(.97);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+/* =========================================
+   FLOATING
+========================================= */
+
+.floating-layer {
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    overflow: hidden;
+}
+
+
+.floating-layer span {
+    position: absolute;
+
+    color: rgba(216,191,140,.18);
+
+    animation:
+        floatAround
+        linear
+        infinite;
+}
+
+
+.floating-layer span:nth-child(1) {
+    left: 10%;
+    top: 20%;
+    animation-duration: 15s;
+}
+
+
+.floating-layer span:nth-child(2) {
+    left: 80%;
+    top: 10%;
+    animation-duration: 19s;
+}
+
+
+.floating-layer span:nth-child(3) {
+    left: 70%;
+    top: 70%;
+    animation-duration: 17s;
+}
+
+
+.floating-layer span:nth-child(4) {
+    left: 20%;
+    top: 75%;
+    animation-duration: 21s;
+}
+
+
+.floating-layer span:nth-child(5) {
+    left: 45%;
+    top: 15%;
+    animation-duration: 14s;
+}
+
+
+.floating-layer span:nth-child(6) {
+    left: 90%;
+    top: 50%;
+    animation-duration: 18s;
+}
+
+
+@keyframes floatAround {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(-30px)
+            rotate(12deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+}
+
+
+/* =========================================
+   HEART
+========================================= */
+
+.final-heart {
+    animation:
+        heartbeat 2s ease-in-out infinite;
+}
+
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+
+}

@@ -1,0 +1,183 @@
+@media (max-width: 900px) {
+
+    .mother-grid {
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+    }
+
+
+    .mother-text {
+        text-align: center;
+    }
+
+
+    .text-divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .body-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .teacher-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .teacher-card {
+        min-height: auto;
+    }
+
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows:
+            300px
+            250px
+            250px;
+    }
+
+
+    .gallery-large {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .section-container {
+        width: min(
+            calc(100% - 28px),
+            var(--container)
+        );
+    }
+
+
+    .mother-section,
+    .teacher-section,
+    .memory-section,
+    .wishes-section,
+    .letter-section {
+        padding: 100px 0;
+    }
+
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 48px;
+    }
+
+
+    .hero-title {
+        font-size: 64px;
+    }
+
+
+    .hero-overline {
+        letter-spacing: .2em;
+    }
+
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+
+    .portrait-frame {
+        padding: 8px;
+    }
+
+
+    .big-quote {
+        font-size: 40px;
+    }
+
+
+    .teacher-quote {
+        padding: 50px 15px;
+    }
+
+
+    .teacher-quote p {
+        font-size: 34px;
+    }
+
+
+    .gallery-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            300px
+            250px
+            250px
+            250px;
+    }
+
+
+    .gallery-large {
+        grid-column: auto;
+    }
+
+
+    .gallery-overlay {
+        opacity: 1;
+
+        transform: none;
+    }
+
+
+    .wish-box {
+        padding: 60px 22px;
+    }
+
+
+    .wish-text {
+        font-size: 39px;
+    }
+
+
+    .envelope {
+        height: 500px;
+    }
+
+
+    .envelope.open .envelope-letter {
+        transform: translateY(-100px);
+    }
+
+
+    .letter-content {
+        padding: 25px;
+    }
+
+
+    .letter-content h3 {
+        font-size: 34px;
+    }
+
+
+    .letter-content p {
+        font-size: 17px;
+    }
+
+
+    .final-title {
+        font-size: 60px;
+    }
+
+}
